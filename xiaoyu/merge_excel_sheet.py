@@ -1,7 +1,7 @@
 import csv
 import openpyxl
 
-wb = openpyxl.load_workbook('C:/Users/admin/Desktop/test.xlsx')
+wb = openpyxl.load_workbook('D:/temp/1/12345.xlsx')
 
 # 获取workbook中所有的表格
 sheets = wb.sheetnames
@@ -36,7 +36,7 @@ for t in sheets:
             list1.append(list2)
 # print(list1)
 print("合并后数据量"+str(total_num))
-with open('C:/Users/admin/Desktop/test2.csv', 'w', newline='') as f:
+with open('C:/Users/admin/Desktop/5.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerows(list1)
     f.close()
